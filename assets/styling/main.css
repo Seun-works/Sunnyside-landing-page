@@ -1,3 +1,5 @@
+/* --------------------- BREAKPOINTS FOR DEVICE SCREENS --------------------- */
+/* --------- STYLING FOR THE OPEN MENU FUNCTIONALITY IN MOBILE MODE --------- */
 @media (max-width: 766px) {
   .is-open .popup-triangle {
     border: 15px solid #fffcfa;
@@ -26,6 +28,9 @@
     text-align: center;
     list-style: none;
   }
+  .is-open .navbar nav li a:hover {
+    color: #23303e;
+  }
   .is-open .navbar nav li .menu-item-4 {
     background-color: #fad400;
     color: black;
@@ -37,12 +42,14 @@
     font-family: 'Fraunces', 'serif';
     font-size: 0.7rem;
   }
+  .is-open .navbar nav li .menu-item-4:hover {
+    background-color: orange;
+    color: white;
+  }
   .is-open .navbar nav li a {
     text-decoration: none;
     color: #5a636c;
     font-size: 15px;
-    padding-right: 1.5rem;
-    padding-left: 0.5rem;
   }
   .is-open .title {
     display: none;
@@ -52,6 +59,7 @@
   }
 }
 
+/* ----------------- UTILITY STYLING FOR THE WHOLE DOCUMENT ----------------- */
 body {
   margin: 0rem;
   -webkit-box-sizing: border-box;
@@ -117,6 +125,9 @@ header .navbar {
   header .navbar li {
     display: inline-block;
   }
+  header .navbar li a:hover {
+    color: #23303e;
+  }
   header .navbar li .menu-item-4 {
     text-transform: uppercase;
     background-color: white;
@@ -170,9 +181,9 @@ header .icon-arrow {
 .adverts {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.5fr 1.5fr;
-      grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.5fr 1.5fr;
-  row-gap: 0px;
+  -ms-grid-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
+      grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
+  row-gap: 0;
 }
 
 @media (min-width: 767px) {
@@ -213,6 +224,7 @@ header .icon-arrow {
   text-decoration: none;
   color: black;
   font-size: 15px;
+  font-family: 'Fraunces', serif;
 }
 
 .adverts .description {
@@ -266,6 +278,22 @@ header .icon-arrow {
   }
   .adverts .advert-1 li {
     text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .adverts .advert-1 {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+  }
+  .adverts .advert-1 h2 {
+    font-size: 2.8rem;
+  }
+  .adverts .advert-1 p {
+    font-size: 20px;
+    line-height: 1.5rem;
   }
 }
 
@@ -337,8 +365,18 @@ header .icon-arrow {
 }
 
 @media (min-width: 1400px) {
+  .adverts .advert-2 {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+  }
+  .adverts .advert-2 h2 {
+    font-size: 2.8rem;
+  }
   .adverts .advert-2 p {
-    font-size: 10px;
+    font-size: 20px;
+    line-height: 1.5rem;
   }
 }
 
@@ -392,12 +430,22 @@ header .icon-arrow {
 }
 
 .adverts .advert-3 h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #25564b;
 }
 
 .adverts .advert-3 p {
   color: #25564b;
+}
+
+@media (min-width: 1000px) {
+  .adverts .advert-3 p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    line-height: 1.5rem;
+  }
 }
 
 .adverts .advert-4 {
@@ -432,12 +480,22 @@ header .icon-arrow {
 }
 
 .adverts .advert-4 h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #19536b;
 }
 
 .adverts .advert-4 p {
   color: #19536b;
+}
+
+@media (min-width: 1000px) {
+  .adverts .advert-4 p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    line-height: 1.5rem;
+  }
 }
 
 /* --------------------- STYLING THE TESTMONIAL CONTENT --------------------- */
@@ -478,8 +536,8 @@ header .icon-arrow {
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: none;
         grid-template-rows: none;
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
   }
 }
 
@@ -489,6 +547,15 @@ header .icon-arrow {
   font-size: 14px;
   font-weight: 600;
   color: #5a636c;
+}
+
+@media (min-width: 767px) {
+  .testimonials p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5rem;
+  }
 }
 
 .testimonials h4 {

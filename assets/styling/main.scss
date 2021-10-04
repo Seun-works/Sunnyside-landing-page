@@ -1,7 +1,4 @@
-
-
-
-
+/* --------------------- BREAKPOINTS FOR DEVICE SCREENS --------------------- */
 @mixin tablet-up {
     @media (min-width: 767px) {
         @content;
@@ -26,6 +23,7 @@
     }    
 }
 
+/* --------- STYLING FOR THE OPEN MENU FUNCTIONALITY IN MOBILE MODE --------- */
 @include small-screen {
 
 .is-open {
@@ -63,9 +61,14 @@
                     text-align: center;
                     list-style: none;
 
+                    a {
+                        &:hover {
+                            color: hsl(212, 27%, 19%);
+                        }
+                    }
+
 
                     .menu-item-4 {
-                        //text-transform: uppercase;
                         background-color: hsl(51, 100%, 49%);
                         color: black;
                         border-radius: 2em;
@@ -75,6 +78,11 @@
                         padding-right: 1rem;
                         font-family: 'Fraunces', 'serif';
                         font-size: 0.7rem;
+
+                        &:hover {
+                            background-color: orange;
+                            color: white;
+                        }
                         
                         
                         
@@ -84,8 +92,6 @@
                         text-decoration: none;
                         color: hsl(213, 9%, 39%);
                         font-size: 15px;
-                        padding-right: 1.5rem;
-                        padding-left: 0.5rem;
                     }  
             }
         }  
@@ -102,6 +108,7 @@
 }
 }
 
+/* ----------------- UTILITY STYLING FOR THE WHOLE DOCUMENT ----------------- */
 body {
    margin: 0rem;
    box-sizing: border-box;
@@ -169,6 +176,15 @@ header {
                 li {
                     display: inline-block;
 
+                    a {
+                        &:hover {
+                            color: hsl(212, 27%, 19%);
+                        }
+
+                    }
+
+                    
+
                     .menu-item-4 {
                         text-transform: uppercase;
                         background-color: white;
@@ -227,6 +243,7 @@ header {
         margin: 0rem auto;
         width: 40px;
         position: relative;
+        
     }
 
     
@@ -236,8 +253,8 @@ header {
 
 .adverts {
     display: grid;
-    grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.5fr 1.5fr;
-    row-gap: 0px;
+    grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
+    row-gap: 0;
     
 
     @include tablet-up {
@@ -275,6 +292,7 @@ header {
             text-decoration: none;
             color: black;
             font-size: 15px;
+            font-family: 'Fraunces', serif;;
             
         }
         
@@ -335,6 +353,21 @@ header {
                 text-align: left;
             }
         }
+
+        @include desktop-max {
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+     
+            h2 {
+                font-size: 2.8rem;
+            }
+             p {
+                 font-size: 20px;
+                 line-height: 1.5rem;
+             }
+         }
         
         padding-top: 1.5rem;
         text-align: center;
@@ -407,9 +440,17 @@ header {
     }
 
     @include desktop-max {
-       
+       width: 80%;
+       top: 50%;
+       left: 50%;
+       right: 50%;
+
+       h2 {
+           font-size: 2.8rem;
+       }
         p {
-            font-size: 10px;
+            font-size: 20px;
+            line-height: 1.5rem;
         }
     }
 
@@ -438,12 +479,7 @@ header {
   }
 
   .advert-3 {
-    //   background-image: url(../../images/mobile/image-graphic-design.jpg);
-    //   background-size: cover;
-    //   background-position: center;
-    //   min-height: 90vh;
-    //   display: flex;
-    //   align-items: flex-end;
+   
     position: relative;
     text-align: center;
     .image-mobile {
@@ -471,28 +507,36 @@ header {
             display: block;
             width: 100%;
         }
+
     }
 
       
       
 
           h3 {
-              font-size: 1.6rem;
+              font-size: 1.3rem;
               color: hsl(167, 40%, 24%);
           }
 
           p {
               color: hsl(167, 40%, 24%);
           }
+
+          @include desktop-up {
+
+            p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                line-height: 1.5rem;
+            }
+            
+        }
   }
 
   .advert-4 {
-    // background-image: url(../../images/mobile/image-photography.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // min-height: 90vh;
-    // display: flex;
-    // align-items: flex-end;
+    
     position: relative;
     text-align: center;
     .image-mobile {
@@ -524,12 +568,23 @@ header {
     
 
         h3 {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             color: hsl(198, 62%, 26%);
         }
 
         p {
             color: hsl(198, 62%, 26%);
+        }
+
+        @include desktop-up() {
+            p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                line-height: 1.5rem;
+            }
+            
         }
   }
 }
@@ -570,7 +625,7 @@ header {
         @include tablet-up {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: none;
-            column-gap: 10px;
+            column-gap: 5px;
         }
         
 
@@ -580,6 +635,13 @@ header {
             font-size: 14px;
             font-weight: 600;
             color: hsl(213, 9%, 39%);
+
+            @include tablet-up {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1.5rem;
+            }
         }
 
         h4 {
