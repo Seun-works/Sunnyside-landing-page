@@ -20,7 +20,7 @@ This project is a landing page for a fictional company created to be responisve 
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Live Site URL: [Sunnyside agency landing page ](https://seun-works.github.io/Loopstudios-landing-page/)
+- Live Site URL: [Sunnyside agency landing page ](https://seun-works.github.io/Sunnyside-landing-page/)
 
 ## My process
 Similar to the loopstudios landing page also found in my repo, i've learned to fully adopt the mobile first workflow to make styling and coding websites a lot easier and more efficient.
