@@ -181,8 +181,8 @@ header .icon-arrow {
 .adverts {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
-      grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
+  -ms-grid-rows: 0.5fr 0.3fr 0.5fr 0.3fr 1fr 1fr;
+      grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr 1fr 1fr;
   row-gap: 0;
 }
 

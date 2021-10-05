@@ -253,7 +253,7 @@ header {
 
 .adverts {
     display: grid;
-    grid-template-rows: 0.5fr 0.25fr 0.5fr 0.25fr 1.25fr 1.25fr;
+    grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr 1fr 1fr;
     row-gap: 0;
     
 
@@ -374,6 +374,7 @@ header {
         padding-bottom: 0.5rem;
         a {
             position: relative;
+            
 
 
             &::before {
@@ -388,6 +389,7 @@ header {
                 opacity: 0.3;
                 background-color: hsl(51, 100%, 49%);
                 position: absolute;
+                
         }
 
         
