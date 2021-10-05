@@ -1,9 +1,9 @@
+// DEFINING THE VARIABLES 
 const heading = document.getElementById('head');
 const mobileBtn = document.querySelector('.mobile-button');
-
-
 let menuOpen = false;
 
+// THIS FUNCTION IS WHAT SHALL BE USED TO DISPLAY THE CLASS THAT SHOWS A MOBILE NAVBAR
 function changeMenu() {
     if(!menuOpen) {
         heading.classList.add ('is-open');
