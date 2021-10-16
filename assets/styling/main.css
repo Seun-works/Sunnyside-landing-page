@@ -177,8 +177,8 @@ header .icon-arrow {
   position: relative;
 }
 
-/* ----------------------- STYLING THE ADVERT CONTENT ----------------------- */
-.adverts {
+/* ----------------------- STYLING THE PORTFOLIO CONTENT ----------------------- */
+.portfolio {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 0.5fr 0.3fr 0.5fr 0.3fr 1fr 1fr;
@@ -187,7 +187,7 @@ header .icon-arrow {
 }
 
 @media (min-width: 767px) {
-  .adverts {
+  .portfolio {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: none;
@@ -196,17 +196,17 @@ header .icon-arrow {
   }
 }
 
-.adverts h2 {
+.portfolio h2 {
   text-align: center;
   font-family: 'Fraunces', serif;
 }
 
-.adverts h3 {
+.portfolio h3 {
   text-align: center;
   font-family: 'Fraunces', serif;
 }
 
-.adverts p {
+.portfolio p {
   text-align: center;
   font-family: 'Barlow', 'Sans-serif';
   font-size: 17px;
@@ -214,12 +214,12 @@ header .icon-arrow {
   color: #818498;
 }
 
-.adverts li {
+.portfolio li {
   list-style: none;
   text-align: center;
 }
 
-.adverts li a {
+.portfolio li a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -227,81 +227,81 @@ header .icon-arrow {
   font-family: 'Fraunces', serif;
 }
 
-.adverts .description {
+.portfolio .description {
   margin-left: auto;
   margin-right: auto;
   min-width: 85%;
   max-width: 7.5rem;
 }
 
-.adverts .display-1 .image-mobile {
+.portfolio .display-1 .image-mobile {
   display: block;
   width: 100%;
 }
 
-.adverts .display-1 .image-desktop {
+.portfolio .display-1 .image-desktop {
   display: none;
 }
 
 @media (min-width: 767px) {
-  .adverts .display-1 {
+  .portfolio .display-1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 1/2/2/3;
   }
-  .adverts .display-1 .image-mobile {
+  .portfolio .display-1 .image-mobile {
     display: none;
   }
-  .adverts .display-1 .image-desktop {
+  .portfolio .display-1 .image-desktop {
     display: block;
     width: 100%;
   }
 }
 
-.adverts .advert-1 {
+.portfolio .portfolio-1 {
   padding-top: 1.5rem;
   text-align: center;
   padding-bottom: 0.5rem;
 }
 
 @media (min-width: 1000px) {
-  .adverts .advert-1 {
+  .portfolio .portfolio-1 {
     padding-top: 8rem;
   }
-  .adverts .advert-1 h2 {
+  .portfolio .portfolio-1 h2 {
     text-align: left;
   }
-  .adverts .advert-1 p {
+  .portfolio .portfolio-1 p {
     text-align: left;
   }
-  .adverts .advert-1 li {
+  .portfolio .portfolio-1 li {
     text-align: left;
   }
 }
 
 @media (min-width: 1400px) {
-  .adverts .advert-1 {
+  .portfolio .portfolio-1 {
     width: 80%;
     top: 50%;
     left: 50%;
     right: 50%;
   }
-  .adverts .advert-1 h2 {
+  .portfolio .portfolio-1 h2 {
     font-size: 2.8rem;
   }
-  .adverts .advert-1 p {
+  .portfolio .portfolio-1 p {
     font-size: 20px;
     line-height: 1.5rem;
   }
 }
 
-.adverts .advert-1 a {
+.portfolio .portfolio-1 a {
   position: relative;
 }
 
-.adverts .advert-1 a::before {
+.portfolio .portfolio-1 a::before {
   content: '';
   display: block;
   height: 8px;
@@ -316,7 +316,7 @@ header .icon-arrow {
 }
 
 @media (min-width: 767px) {
-  .adverts .advert-1 {
+  .portfolio .portfolio-1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
@@ -325,66 +325,66 @@ header .icon-arrow {
   }
 }
 
-.adverts .display-2 .image-mobile {
+.portfolio .display-2 .image-mobile {
   width: 100%;
 }
 
-.adverts .display-2 .image-desktop {
+.portfolio .display-2 .image-desktop {
   display: none;
 }
 
 @media (min-width: 767px) {
-  .adverts .display-2 .image-mobile {
+  .portfolio .display-2 .image-mobile {
     display: none;
   }
-  .adverts .display-2 .image-desktop {
+  .portfolio .display-2 .image-desktop {
     display: block;
     width: 100%;
   }
 }
 
-.adverts .advert-2 {
+.portfolio .portfolio-2 {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media (min-width: 1000px) {
-  .adverts .advert-2 {
+  .portfolio .portfolio-2 {
     padding-top: 8rem;
     top: 50%;
   }
-  .adverts .advert-2 h2 {
+  .portfolio .portfolio-2 h2 {
     text-align: left;
   }
-  .adverts .advert-2 p {
+  .portfolio .portfolio-2 p {
     text-align: left;
   }
-  .adverts .advert-2 li {
+  .portfolio .portfolio-2 li {
     text-align: left;
   }
 }
 
 @media (min-width: 1400px) {
-  .adverts .advert-2 {
+  .portfolio .portfolio-2 {
     width: 80%;
     top: 50%;
     left: 50%;
     right: 50%;
   }
-  .adverts .advert-2 h2 {
+  .portfolio .portfolio-2 h2 {
     font-size: 2.8rem;
   }
-  .adverts .advert-2 p {
+  .portfolio .portfolio-2 p {
     font-size: 20px;
     line-height: 1.5rem;
   }
 }
 
-.adverts .advert-2 a {
+.portfolio .portfolio-2 a {
   position: relative;
 }
 
-.adverts .advert-2 a::before {
+.portfolio .portfolio-2 a::before {
   content: '';
   display: block;
   height: 8px;
@@ -398,20 +398,20 @@ header .icon-arrow {
   position: absolute;
 }
 
-.adverts .advert-3 {
+.portfolio .portfolio-3 {
   position: relative;
   text-align: center;
 }
 
-.adverts .advert-3 .image-mobile {
+.portfolio .portfolio-3 .image-mobile {
   width: 100%;
 }
 
-.adverts .advert-3 .image-desktop {
+.portfolio .portfolio-3 .image-desktop {
   display: none;
 }
 
-.adverts .advert-3 .description {
+.portfolio .portfolio-3 .description {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -420,26 +420,26 @@ header .icon-arrow {
 }
 
 @media (min-width: 767px) {
-  .adverts .advert-3 .image-mobile {
+  .portfolio .portfolio-3 .image-mobile {
     display: none;
   }
-  .adverts .advert-3 .image-desktop {
+  .portfolio .portfolio-3 .image-desktop {
     display: block;
     width: 100%;
   }
 }
 
-.adverts .advert-3 h3 {
+.portfolio .portfolio-3 h3 {
   font-size: 1.3rem;
   color: #25564b;
 }
 
-.adverts .advert-3 p {
+.portfolio .portfolio-3 p {
   color: #25564b;
 }
 
 @media (min-width: 1000px) {
-  .adverts .advert-3 p {
+  .portfolio .portfolio-3 p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -448,20 +448,20 @@ header .icon-arrow {
   }
 }
 
-.adverts .advert-4 {
+.portfolio .portfolio-4 {
   position: relative;
   text-align: center;
 }
 
-.adverts .advert-4 .image-mobile {
+.portfolio .portfolio-4 .image-mobile {
   width: 100%;
 }
 
-.adverts .advert-4 .image-desktop {
+.portfolio .portfolio-4 .image-desktop {
   display: none;
 }
 
-.adverts .advert-4 .description {
+.portfolio .portfolio-4 .description {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -470,26 +470,26 @@ header .icon-arrow {
 }
 
 @media (min-width: 767px) {
-  .adverts .advert-4 .image-mobile {
+  .portfolio .portfolio-4 .image-mobile {
     display: none;
   }
-  .adverts .advert-4 .image-desktop {
+  .portfolio .portfolio-4 .image-desktop {
     display: block;
     width: 100%;
   }
 }
 
-.adverts .advert-4 h3 {
+.portfolio .portfolio-4 h3 {
   font-size: 1.3rem;
   color: #19536b;
 }
 
-.adverts .advert-4 p {
+.portfolio .portfolio-4 p {
   color: #19536b;
 }
 
 @media (min-width: 1000px) {
-  .adverts .advert-4 p {
+  .portfolio .portfolio-4 p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;

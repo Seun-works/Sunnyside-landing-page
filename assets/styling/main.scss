@@ -249,9 +249,9 @@ header {
     
 }
 
-/* ----------------------- STYLING THE ADVERT CONTENT ----------------------- */
+/* ----------------------- STYLING THE PORTFOLIO CONTENT ----------------------- */
 
-.adverts {
+.portfolio {
     display: grid;
     grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr 1fr 1fr;
     row-gap: 0;
@@ -336,7 +336,7 @@ header {
         }
     }
 
-    .advert-1 {
+    .portfolio-1 {
 
         @include desktop-up {
             padding-top: 8rem;
@@ -422,7 +422,7 @@ header {
     }
   }
 
-  .advert-2 {
+  .portfolio-2 {
 
     @include desktop-up {
         padding-top: 8rem;
@@ -480,7 +480,7 @@ header {
 
   }
 
-  .advert-3 {
+  .portfolio-3 {
    
     position: relative;
     text-align: center;
@@ -537,7 +537,7 @@ header {
         }
   }
 
-  .advert-4 {
+  .portfolio-4 {
     
     position: relative;
     text-align: center;
